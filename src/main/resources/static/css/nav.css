@@ -1,0 +1,253 @@
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	text-size-adjust: 100%
+}
+
+header{
+ min-height:70px;
+ z-index:5;
+}
+
+@font-face {
+	font-family: 'Oswald-Stencil';
+	src: url('./fonts/Oswald-Stencil.ttf') format('truetype');
+}
+
+.nav-primary{
+    display: block;
+    height: 70px;
+    min-width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #ff6a09;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ff7c09),to(#ff6a09));
+    background-image: -webkit-linear-gradient(top,#ff7c09,#ff6a09);
+    background-image: -moz-linear-gradient(top,#ff7c09,#ff6a09);
+    background-image: -o-linear-gradient(top,#ff7c09,#ff6a09);
+    background-image: linear-gradient(to bottom,#ff7c09,#ff6a09);
+}
+
+.nav-primary-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    font-size: 0;
+    margin: 0 auto;
+  /*  padding: 0 20px 0 0; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1200px){
+    .nav-primary-container {
+   /* padding-right: 20px;
+    width: 1191px;*/
+    }
+}
+
+.nav-primary-nav {
+    /*margin: 0;*/
+    width: 0%;
+    margin: auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: start;
+    font-size: 0;
+    vertical-align: top;
+    /*width: calc(100% - 80px);*/
+}
+.nav-primary-main-menu {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 18px;
+}
+.nav-primary-main-menu>a {
+    color: #000000;
+    font-weight: 700;
+    display: inline-block;
+    padding: 9px 13px 23px 20px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px #ff9200;
+    white-space: nowrap;
+}
+
+
+.footer {
+    font-size: 14px;
+    bottom: 0;
+    background-color: #ff6a09;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, .2);
+    width: 100%;
+	z-index: 15;
+}
+
+.footer-desktop {
+    margin: 0 auto
+}
+
+@media(min-width:1050px) {
+    .footer-desktop {
+        display: block
+    }
+}
+
+.footer-desktop-default {
+    line-height: 73px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 1180px
+}
+
+.footer-desktop-default ul {
+    margin: 0;
+    padding: 0;
+    padding: 0 20px
+	z-index:10;
+}
+
+.footer-desktop-default li {
+    display: inline-block;
+    margin-left: 18px
+}
+
+.footer-desktop-default a {
+    color: #151515;
+    text-decoration: none
+}
+
+.footer-desktop-default a:hover {
+    text-decoration: underline
+}
+
+.footer-desktop-default .footer-social {
+    position: absolute;
+    right: 0;
+    top: 20px
+}
+
+.footer-social {
+    margin: 0;
+    padding: 0
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-left: 18px
+}
+
+.footer-social li:first-child {
+    margin-left: 0
+}
+
+.facebook a,
+.footer-social a[href*="facebook.com"],
+.twitter a,
+.footer-social a[href*="twitter.com"],
+.linkedin a,
+.footer-social a[href*="linkedin.com"],
+.instagram a,
+.footer-social a[href*="instagram.com"] {
+    background: #151515;
+    display: inline-block;
+    height: 30px;
+    text-indent: -999em;
+    width: 30px;
+    background: transparent no-repeat left top
+}
+
+.facebook a a,
+.footer-social a[href*="facebook.com"] a,
+.twitter a a,
+.footer-social a[href*="twitter.com"] a,
+.instagram a a,
+.footer-social a[href*="instagram.com"] a {
+    cursor: pointer
+}
+
+.facebook a,
+.footer-social a[href*="facebook.com"] {
+    background-image: url("../images/social/facebook.png")
+}
+
+@media(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:3/2),
+(-webkit-min-device-pixel-ratio:1.5),
+(min-device-pixel-ratio:1.5),
+(min-resolution:144dpi),
+(min-resolution:1.5dppx) {
+    .facebook a,
+    .footer-social a[href*="facebook.com"] {
+        background-image: url("../images/social/facebook@2x.png");
+        background-size: 100% 100%
+    }
+}
+
+.twitter a,
+.footer-social a[href*="twitter.com"] {
+    background-image: url("../images/social/twitter.png")
+}
+
+@media(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:3/2),
+(-webkit-min-device-pixel-ratio:1.5),
+(min-device-pixel-ratio:1.5),
+(min-resolution:144dpi),
+(min-resolution:1.5dppx) {
+    .twitter a,
+    .footer-social a[href*="twitter.com"] {
+        background-image: url("../images/social/twitter@2x.png");
+        background-size: 100% 100%
+    }
+}
+
+
+.instagram a,
+.footer-social a[href*="instagram.com"] {
+    background-image: url("../images/social/instagram.png")
+}
+
+@media(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:3/2),
+(-webkit-min-device-pixel-ratio:1.5),
+(min-device-pixel-ratio:1.5),
+(min-resolution:144dpi),
+(min-resolution:1.5dppx) {
+    .instagram a,
+    .footer-social a[href*="instagram.com"] {
+        background-image: url("../images/social/instagram@2x.png");
+        background-size: 100% 100%
+    }
+}

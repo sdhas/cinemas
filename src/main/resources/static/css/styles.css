@@ -1,0 +1,426 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #383737;
+    font-family: sans-serif;
+    overflow: auto;
+     overflow-x:hidden;
+	 margin: 0;
+}
+
+ul {
+	margin: 1em 0;
+	padding: 0 0 0 40px
+}
+
+nav ul {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0
+}
+
+img {
+	border: 0;
+	vertical-align: middle
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+}
+
+wrapper {
+  overflow: hidden;
+}
+
+.wrapper-home .container {
+  background: #171717;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #464646 0%, #171717 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #464646 0%, #171717 100%);
+  background: radial-gradient(ellipse at center, #464646 0%, #171717 100%);
+  min-height: 0;
+}
+
+.carousel-section-wrapper {
+overflow: hidden;
+}
+
+.carousel-section {
+position: relative;
+  height: calc(100vh - 110px);
+    margin-top: 0;
+}
+
+.carousel-container {
+box-sizing: border-box;
+    bottom: 0px;
+    display: block;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel-container-content{
+  text-align: center;
+  height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 0;
+    display: -webkit-box ;
+    display: -moz-box ;
+    display: box ;
+    display: -webkit-flex ;
+    display: -moz-flex ;
+    display: -ms-flexbox ;
+    display: flex ;
+    flex-flow: row wrap;
+}
+
+.tabs-carousel-home {
+	display: inline-block;
+    margin: 0 auto;
+    max-width: none;
+    padding: 0;
+    text-align: center;
+}
+
+.tabs-carousel-container{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.tabs-carousel-home .tabs-item {
+
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    line-height: 1;
+    margin: 0 10px;
+	line-height: 1;
+	display: inline-block;
+}
+
+.tabs-link {
+  border-radius: 3px;
+  transition: background 0.3s ease-out;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Oswald-Stencil";
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 10px 5px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tabs-link:hover {
+  background-color: #6d6e71;
+  color: #ffffff;
+}
+
+.tabs-link.active {
+  background-color: #ffc426;
+  color: #151515;
+  text-shadow: 0px 1px #ffda74;
+}
+
+.tabs-link.active:hover {
+  background-color: #ffd634;
+  color: #151515;
+}
+
+.tabs-link.is-active {
+  background-color: #ffc426;
+  color: #151515;
+  text-shadow: 0px 1px #ffda74;
+}
+
+.tabs-link.is-active:hover {
+  background-color: #ffd634;
+  color: #151515;
+}
+
+.tabs-link span {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.tabs-carousel-home .tabs-link {
+    background: none;
+    border: 1px solid transparent;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    color: #ffc426;
+    font-size: 35px;
+    line-height: inherit;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.tabs-carousel-home .tabs-link.is-active,
+input[type='radio']:checked + .tabs-carousel-home .tabs-link {
+  background: none;
+  border: 1px solid #ffffff;
+  border-width: 1px 0 0;
+  color: #ffffff;
+}
+
+.tabs-carousel-home .tabs-link.is-active span,
+input[type='radio']:checked + .tabs-carousel-home .tabs-link span {
+  text-shadow: none;
+}
+
+.tabs-carousel-home input[type='radio']:checked + .tabs-link {
+  background: none;
+  border-width: 1px 0 0;
+  color: #ffffff;
+}
+
+.tabs-carousel-home input[type='radio']:checked + .tabs-link span {
+  text-shadow: none;
+}
+
+@media (min-width: 768px) {
+  .tabs-item {
+    display: inline-block;
+  }
+}
+
+.carousel-background {
+    margin-top: 0;
+    display: block;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-background-slideshow {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, #464646 0%, #171717 100%);
+}
+
+.poster-carousel-home {
+margin-top: 30px;
+}
+
+.poster-carousel {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.poster-carousel-item {
+    padding: 10px 10px 10px 10px;
+    transition-duration: 300ms;
+}
+
+.poster-content {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 311px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 220px;
+  transition: all 0.3s ease-in-out;
+}
+
+.poster-image {
+	width: auto;
+    margin: 0px auto;
+}
+
+.poster-image img{
+    max-width: 100%;
+}
+
+.poster-label {
+white-space: nowrap;
+color: rgba(255, 255, 255, 0.7);
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 10px auto 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    white-space: normal;
+    width: 170px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 0 36px;
+    -moz-flex: 1 0 36px;
+    -ms-flex: 1 0 36px;
+    flex: 1 0 36px;
+}
+
+
+.previous-arrow {
+    margin-left: 20px;
+    z-index: 20;
+    top: 25%;
+    left: 0;
+    color: #ffc426;
+}
+
+.next-arrow {
+    margin-right: 20px;
+    z-index: 20;
+    top: 25%;
+    right: 0;
+    color: #ffc426;
+}
+
+.previous-arrow, .next-arrow {
+border-radius: 10px;
+opacity: 0.5;
+    background: #545453;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 400px) {
+
+.previous-arrow, .next-arrow {
+border-radius: 8px;
+opacity: 0.5;
+    background: #545453;
+    padding: 14px;
+    width: 15px;
+    height: 15px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.previous-arrow {
+    margin-left: 10px;
+}
+
+.next-arrow {
+    margin-right: 10px;
+}
+}
+
+.previous-arrow:hover {
+opacity: 0.85;
+    margin-left: 10px;
+    transition: .2s ease-in;
+}
+
+.next-arrow:hover {
+opacity: 0.85;
+    margin-right: 10px;
+    transition: .2s ease-in;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+.tabs-carousel-home .tabs-link {
+font-size: 16px;
+}
+.tabs-carousel-home .tabs-item {
+margin: 0px 3px;
+}
+
+ .slick-current .poster-content {
+    transform: scale(1.1333);
+  }
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+   .poster-content {
+    height: calc(100vh - 190px);
+    width: calc((100vh - 190px) * 0.709);
+  }
+   .slick-current .poster-content {
+    transform: scale(1.1333);
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+   .poster-content {
+    height: calc(100vh - 440px);
+    width: calc((100vh - 440px) * 0.709);
+  }
+}
